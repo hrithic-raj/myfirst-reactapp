@@ -1,0 +1,83 @@
+.App {
+  display: grid;
+  justify-content: center;
+  grid-template-columns:repeat(4,1fr);
+  grid-template-rows: repeat(3,1fr);
+  column-gap: 50px;
+  row-gap: 50px;
+  margin: 70px;
+}
+
+.hrjbtn{
+  border: none;
+  padding: 10px;
+  width: 150px;
+  border-radius: 30px;
+}
+.state,.form,.listkey,.props,.useRef,.useRef2 ,.useEffect,.prestate{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.useEffect{
+  grid-column: 3 / 5;
+}
+.br{
+  /* border: 2px solid rgb(124, 122, 122); */
+  background-color: rgba(253, 228, 199,0.5);
+  -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(30px);
+  border-radius: 20px;
+  /* box-shadow: 10px 10px 10px 0px gray; */
+  color: aquamarine;
+
+}
+.inp input{
+  width: 200px;
+  height: 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+.formvalbox{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(132, 187, 197, 0.5);
+  backdrop-filter: blur(3px);
+  width: 250px;
+  height: 350px;
+  margin: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 100px 1px 1px 1px solid gray;
+  
+}
+.formvalbox label{
+  color: rgb(16, 126, 126);
+  font-weight: 700;
+}
+.formval{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/3;
+}
+.formdis{
+  width: 300px;
+  height: 350px;
+  margin: 30px;
+  /* margin-top: 50px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+.formdis pre{
+  align-self: flex-start;
+}

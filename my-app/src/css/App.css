@@ -2,7 +2,7 @@
   display: grid;
   justify-content: center;
   grid-template-columns:repeat(4,1fr);
-  grid-template-rows: repeat(3,1fr);
+  grid-template-rows: repeat(4,1fr); 
   column-gap: 50px;
   row-gap: 50px;
   margin: 70px;
@@ -37,23 +37,27 @@
 .inp input{
   width: 200px;
   height: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   border-radius: 10px;
   border: none;
+  text-align: center;
 }
-
+.inp Button{
+  margin-top: 20px;
+}
 .formvalbox{
   display: flex;
   flex-direction: column;
   background-color: rgba(132, 187, 197, 0.5);
   backdrop-filter: blur(3px);
   width: 250px;
-  height: 350px;
+  height: max-content;
   margin: 30px;
   justify-content: center;
   align-items: center;
   border-radius: 30px;
   box-shadow: 100px 1px 1px 1px solid gray;
+  padding: 30px;
   
 }
 .formvalbox label{
@@ -78,6 +82,84 @@
   justify-content: flex-start;
   text-align: center;
 }
-.formdis pre{
-  align-self: flex-start;
+.loginsucces{
+    background-color: rgb(72, 239, 183);
+    color: aliceblue;
+    width: 0px;
+    border-radius: 40px;
+    animation: grow 0.5 forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.loginsucces h4{
+  font-size: 0; 
+  animation: grow 0.5s forwards;
+}
+
+form span{
+  color: rgb(235, 86, 86);
+  font-weight: 500;
+}
+
+@keyframes grow {
+  0%{
+    font-size: 0;
+    width: 0;
+  }
+  100%{
+    width:350px;
+    font-size: 24px;
+  }
+}
+
+.todo{
+  grid-column: 2/4;
+  /* width: max-content; */
+}
+.todo h1{
+  text-align: center;
+}
+.todo-top{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.todo-top button{
+  width: 60px;
+  height: 50px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+.todo-top input[type*='text']{
+width: 300px;
+height: 50px;
+border-radius: 20px;
+}
+
+.todo-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  color: rgb(12, 9, 7);
+}
+
+.todo-items{
+  display: grid;
+  grid-template-columns:1fr 5fr 1fr; 
+  margin-bottom: 10px;
+  align-items: center;
+  /* background-color: rgba(255, 255, 255, 0.772); */
+  border-radius: 20px;
+}
+
+.todo-items button{
+  border-radius: 20px;
+}
+.todo-items span{
+  margin-left: 10px;
+}
+.todo-items input{
+  margin-left: 10px;
 }

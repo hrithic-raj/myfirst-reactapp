@@ -12,6 +12,7 @@ import Formval from './components/Formval';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
 import RenderCounter from './components/useref2';
+import Todo from './components/Todu';
 
 function App() {
 
@@ -65,6 +66,17 @@ function App() {
       <div className="prestate inp br">
       <PreviousStateExample/>
       </div>
+      <div className='br'>
+
+      </div>
+      <div className='todo br'> 
+          <Todo/>
+      </div>
+      {/* <div className='todopop'>
+        <div className='pop'>
+                
+        </div>
+      </div> */}
     </div>
 
   );

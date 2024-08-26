@@ -13,6 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
 import RenderCounter from './components/useref2';
 import Todo from './components/Todu';
+import Allinone from './components/Allinone';
 
 function App() {
 
@@ -40,7 +41,7 @@ function App() {
       <div className='props br'>
         <h1>Counter using Props</h1>
         <Button className='hrjbtn' onClick={P_counters}>Adich keri vaa</Button>
-        <Counters pcount={pcount} setpcount={setpcount}/>
+        <Counters pcount={pcount}/>
       </div>
 
       <div className="listkey br">
@@ -74,11 +75,13 @@ function App() {
       </div>
       {/* <div className='todopop'>
         <div className='pop'>
-                
+
         </div>
       </div> */}
+      <div className='All br'>
+        <Allinone/>
+      </div>
     </div>
-
   );
 }
 
